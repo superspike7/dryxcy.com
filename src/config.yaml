@@ -1,5 +1,5 @@
 site:
-  name: Dryxcy 
+  name: Dryxcy
   site: 'https://dryxcy.com'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Dryxcy Dionsay 
+    default: Dryxcy Dionsay
     template: '%s — Dryxcy'
-  description: "Social Media Manager Virtual Assistant"
+  description: 'Social Media Manager Virtual Assistant'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Dryxcy 
+    site_name: Dryxcy
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -24,8 +24,8 @@ metadata:
     type: website
   twitter:
     handle: null
-    site: null 
-    cardType: null 
+    site: null
+    cardType: null
 
 i18n:
   language: en
