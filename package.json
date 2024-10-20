@@ -21,6 +21,7 @@
     "fix:prettier": "prettier -w ."
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.5.4",
     "@astrojs/rss": "^4.0.8",
     "@astrojs/sitemap": "^3.2.0",
     "@astrolib/analytics": "^0.6.1",
