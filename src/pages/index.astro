@@ -4,6 +4,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import heroBg from '~/assets/images/hero-background.webp';
 import heroSvg from '~/assets/images/hero-illustration.svg';
 import aboutImg from '~/assets/images/about.png';
+import service1 from '~/assets/images/service-1.png';
+import service2 from '~/assets/images/service-2.png';
+import service3 from '~/assets/images/service-3.png';
+import service4 from '~/assets/images/service-4.png';
 
 const metadata = {
   title: 'Dryxcy — Social Media Manager Virtual Assistant for Interior Design Business',
@@ -32,12 +36,12 @@ const metadata = {
       </div>
     </div>
   </section>
-  <section class="bg-primary relative top-[-120px] z-10">
-    <div class="flex flex-col sm:flex-row px-8 md:px-2 md:p-16  py-28 gap-4">
+  <section id="about" class="bg-primary relative top-[-120px] z-10">
+    <div class="flex flex-col sm:flex-row px-8 md:px-2 md:p-16 py-28 gap-4">
       <div class="flex flex-col text-gray-100 sm:w-[40%] items-center">
         <p class="p-0 m-0">Here's Everything You Need to Know</p>
         <h2 class="font-black text-6xl font-display">About Me</h2>
-        <img src={aboutImg.src} alt="Another portrait pic of Dryxcy with dog" class="mt-4">
+        <img src={aboutImg.src} alt="Another portrait pic of Dryxcy with dog" class="mt-4" />
       </div>
       <div class="flex flex-col justify-between flex-1 gap-4 sm:pr-20">
         <div>
@@ -70,6 +74,43 @@ const metadata = {
             management, transforming your vision into reality and connecting you with the audience that truly matters.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <h2 class="text-center font-black font-display text-6xl mb-4 text-primary">Services</h2>
+    <div class="flex flex-col md:flex-row justify-center p-4 md:px-36 gap-12">
+      <div class="flex flex-col gap-2">
+        <img src={service1.src} alt="clock and speaker" />
+        <h3 class="font-display font-black text-accent text-3xl">Social Media Management</h3>
+        <p class="text-primary">
+          I handle all aspects of your social media presence, from strategy development to content scheduling, ensuring
+          your brand engages effectively with its audience and grows its online community.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <img src={service2.src} alt="girl filming with ring light" />
+        <h3 class="font-display font-black text-accent text-3xl">Content Creation</h3>
+        <p class="text-primary">
+          I create captivating and relevant content tailored to your brand’s voice, including eye-catching posts,
+          engaging videos, and informative articles that resonate with your target audience and drive engagement.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <img src={service3.src} alt="laptop with graphics design screen" />
+        <h3 class="font-display font-black text-accent text-3xl">Graphics and Logo Design</h3>
+        <p class="text-primary">
+          I design visually appealing graphics and unique logos that reflect your brand’s identity, helping you stand
+          out in a crowded market and leave a lasting impression on your audience.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <img src={service4.src} alt="using phone" />
+        <h3 class="font-display font-black text-accent text-3xl">Video and Photo Editing</h3>
+        <p class="text-primary">
+          I manage your Facebook page with a focus on increasing engagement and building community, crafting posts that
+          capture attention, responding to inquiries, and analyzing performance to optimize growth.
+        </p>
       </div>
     </div>
   </section>
