@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import heroBg from '~/assets/images/hero-background.webp';
 import heroSvg from '~/assets/images/hero-illustration.svg';
+import aboutImg from '~/assets/images/about.png';
 
 const metadata = {
   title: 'Dryxcy — Social Media Manager Virtual Assistant for Interior Design Business',
@@ -17,7 +18,7 @@ const metadata = {
     </div>
     <div class="flex flex-col md:flex-row max-w-4xl mx-auto mt-12">
       <div class="flex flex-col gap-4 md:w-[70%] z-10 p-4 sm:pt-28">
-        <h1 class="text-4xl font-bold text-primary">
+        <h1 class="text-5xl font-black text-primary font-display">
           Your Go-To Social Media Management Virtual Assistant for Interior Design Businesses
         </h1>
         <a class="rounded-xl p-4 bg-accent text-primary font-bold inline w-fit" href="#">See My Work</a>
@@ -30,6 +31,46 @@ const metadata = {
         />
       </div>
     </div>
-    <div class="relative bg-primary h-64 w-full top-[-120px] sm:top-[-80px] z-20"></div>
+  </section>
+  <section class="bg-primary relative top-[-120px] z-10">
+    <div class="flex flex-col sm:flex-row px-8 md:px-2 md:p-16  py-28 gap-4">
+      <div class="flex flex-col text-gray-100 sm:w-[40%] items-center">
+        <p class="p-0 m-0">Here's Everything You Need to Know</p>
+        <h2 class="font-black text-6xl font-display">About Me</h2>
+        <img src={aboutImg.src} alt="Another portrait pic of Dryxcy with dog" class="mt-4">
+      </div>
+      <div class="flex flex-col justify-between flex-1 gap-4 sm:pr-20">
+        <div>
+          <h3 class="text-4xl font-bold text-accent font-display">Biography:</h3>
+          <p class="text-gray-100 mt-2">
+            I am Dryxcy Dapitan Dionsay, 22 years old, from the Philippines. I graduated Cum Laude with a Bachelor’s
+            degree in Secondary Education, majoring in English. I offer a diverse skill set across various creative and
+            digital disciplines. My expertise includes budget-friendly interior design, DIY project crafting, makeup
+            artistry, portrait creation, painting, sewing, and producing handmade accessories such as scrunchies and
+            hair bows. Additionally, I possess strong digital skills in areas such as digital illustration, graphic and
+            logo design, as well as video and photo editing. In addition to my creative abilities, I have two years of
+            experience as an ESL teacher, which has honed my communication skills and ability to work effectively with
+            individuals from diverse backgrounds.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-4xl font-bold text-accent font-display">Experience:</h3>
+          <p class="text-gray-100 mt-2">
+            As a content creator, I know the challenges of growing a business on social media. I manage two Facebook
+            pages—one for selling my handmade scrunchies and hair bows, as well as posting my makeup transformations and
+            tutorials, and another for our marketing agency. This hands-on experience has equipped me with valuable
+            insights into engaging audiences and crafting effective strategies, allowing me to help your brand thrive in
+            the digital landscape.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-4xl font-bold text-accent font-display">Mission Statement:</h3>
+          <p class="text-gray-100 mt-2">
+            My mission is to empower your business to flourish through captivating content and strategic social media
+            management, transforming your vision into reality and connecting you with the audience that truly matters.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </Layout>
