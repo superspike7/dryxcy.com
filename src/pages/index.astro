@@ -1,8 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import heroBg from '~/assets/images/hero-background.webp';
+import heroSvg from '~/assets/images/hero-illustration.svg';
 
 const metadata = {
   title: 'Dryxcy — Social Media Manager Virtual Assistant for Interior Design Business',
@@ -11,22 +11,21 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-  <Hero>
-    <Fragment slot="title"> Coming Soon... </Fragment>
-  </Hero>
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Visit Facebook',
-        href: 'facebook.com/dryxcy.meow',
-        target: '_blank',
-      },
-    ]}
-  >
-    <Fragment slot="title"> Contact me on Facebook </Fragment>
-  </CallToAction>
+  <section id="hero" class="relative">
+    <div class="absolute top-[-62px] z-0 h-full w-full">
+      <img src={heroBg.src} alt="clean minimal room background" class="h-full w-full">
+    </div>
+    <div class="flex flex-col md:flex-row max-w-4xl mx-auto mt-12">
+      <div class="flex flex-col gap-4 md:w-[70%] z-10 p-4 sm:pt-28">
+        <h1 class="text-4xl font-bold text-primary">
+          Your Go-To Social Media Management Virtual Assistant for Interior Design Businesses
+        </h1>
+        <a class="rounded-xl p-4 bg-accent text-primary font-bold inline w-fit" href="#">See My Work</a>
+      </div>
+      <div class="z-10 relative top-28 sm:top-10 flex flex-row-reverse">
+        <img src={heroSvg.src} alt="Hero Portrait image of Dryxcy" class="relative top-[-80px] sm:top-0 w-[60%] sm:[w-70%] md:w-full md:h-full" />
+      </div>
+    </div>
+  </section>
+  <section class="bg-primary w-full h-80"></section>
 </Layout>
