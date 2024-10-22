@@ -16,6 +16,8 @@ import socialGraphic2 from '~/assets/images/social-graphic-2.png';
 import socialGraphic3 from '~/assets/images/social-graphic-3.png';
 import socialGraphic4 from '~/assets/images/social-graphic-4.png';
 import socialGraphic5 from '~/assets/images/social-graphic-5.png';
+import logoDesign1 from '~/assets/images/logo-design-1.png';
+import logoDesign2 from '~/assets/images/logo-design-2.png';
 
 const metadata = {
   title: 'Dryxcy — Social Media Manager Virtual Assistant for Interior Design Business',
@@ -124,7 +126,7 @@ const metadata = {
     </div>
   </section>
 
-  <section id="portfolio" class="bg-primary py-20 px-4 md:px-16">
+  <section id="portfolio" class="bg-primary py-20 px-4 md:px-36">
     <h2 class="text-center font-display font-black text-6xl text-gray-100 mb-12">Portfolio</h2>
     <div class="flex flex-col lg:flex-row gap-4">
       <div class="flex flex-col gap-2 justify-between">
@@ -155,7 +157,7 @@ const metadata = {
 
     <!-- Social Media Graphics -->
 
-    <div class="mt-16">
+    <div class="mt-32">
       <h3 class="font-black font-display text-accent text-3xl">Social Media Graphics</h3>
       <p class="text-gray-100 text-xl">
         My designs elevate online presence, boost engagement, and ensure a cohesive brand message. With a blend of
@@ -163,12 +165,34 @@ const metadata = {
         audience.
       </p>
       <div class="grid grid-cols-2 grid-rows-3 sm:grid-cols-4 sm:grid-rows-2 max-h-[800px] gap-4 mt-8">
-        <img src={socialGraphic1.src} alt="Social Graphics about website" class="row-span-2 sm:col-span-2 sm:row-span-2 w-full h-full object-cover">
-        <img src={socialGraphic2.src} alt="Social Graphics about website" class="w-full h-full object-cover">
-        <img src={socialGraphic3.src} alt="Social Graphics about website" class="w-full h-full object-cover">
-        <img src={socialGraphic4.src} alt="Social Graphics about website" class="w-full h-full object-cover">
-        <img src={socialGraphic5.src} alt="Social Graphics about website" class="w-full h-full object-cover">
+        <img
+          src={socialGraphic1.src}
+          alt="Social Graphics about website"
+          class="row-span-2 sm:col-span-2 sm:row-span-2 w-full h-full object-cover"
+        />
+        <img src={socialGraphic2.src} alt="Social Graphics about website" class="w-full h-full object-cover" />
+        <img src={socialGraphic3.src} alt="Social Graphics about website" class="w-full h-full object-cover" />
+        <img src={socialGraphic4.src} alt="Social Graphics about website" class="w-full h-full object-cover" />
+        <img src={socialGraphic5.src} alt="Social Graphics about website" class="w-full h-full object-cover" />
       </div>
+    </div>
+
+    <!-- Logo Designs -->
+
+    <div class="mt-32 flex flex-col lg:flex-row gap-4">
+      <div class="flex flex-col flex-1 gap-4">
+        <div class="">
+          <h3 class="font-black font-display text-accent text-3xl">Logo Designs</h3>
+          <p class="text-gray-100 text-xl">
+            I understand the importance of a strong brand identity in social media management, and these logos are crafted
+            to resonate with target audiences, enhancing brand recognition and engagement. Through my designs, I aim to
+            create a cohesive visual presence that aligns with the overall marketing strategy and effectively communicates
+            the brand's message.
+          </p>
+        </div>
+        <img src={logoDesign2.src} alt="Text Logo design of Light Launch Studio" class="flex-1 h-full w-full object-cover">
+      </div>
+      <img src={logoDesign1.src} alt="Logo design of Light Launch Studio" class="lg:order-first flex-1 h-full w-full object-cover">
     </div>
   </section>
 </Layout>
