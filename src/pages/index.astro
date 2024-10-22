@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
 
 import heroBg from '~/assets/images/hero-background.webp';
 import heroSvg from '~/assets/images/hero-illustration.svg';
@@ -146,15 +147,8 @@ const metadata = {
           captions, and interactive elements, I’ve successfully increased likes and comments on my posts.
         </p>
       </div>
-      <img
-        src={socialEngagement1.src}
-        alt="Screenshot of positive social media engagment"
-        class="justify-self-end"
-      />
-      <img
-        src={socialEngagement2.src}
-        alt="Another screenshot of positive social media engagment"
-      />
+      <img src={socialEngagement1.src} alt="Screenshot of positive social media engagment" class="justify-self-end" />
+      <img src={socialEngagement2.src} alt="Another screenshot of positive social media engagment" />
     </div>
 
     <div class="mt-32 flex flex-col lg:flex-row gap-4">
@@ -225,7 +219,7 @@ const metadata = {
     <!-- Logo Designs -->
 
     <div class="mt-32 flex flex-col lg:flex-row gap-4">
-      <div class="flex flex-col flex-1 gap-4 ">
+      <div class="flex flex-col flex-1 gap-4">
         <div class="flex-1">
           <h3 class="font-black font-display text-accent text-3xl">Logo Designs</h3>
           <p class="text-gray-100 text-xl mt-4">
@@ -249,34 +243,68 @@ const metadata = {
     </div>
   </section>
 
-
   <section id="contact" class="py-16 px-4">
     <h2 class="font-black text-6xl font-display text-primary text-center">Contact</h2>
 
     <div class="flex flex-col md:flex-row max-w-2xl mx-auto gap-4 mt-8">
       <div class="">
-        <h3 class="text-2xl font-display font-bold text-primary text-center mb-4">Let’s chat about how I can help your business grow!</h3>
-        <form action="" class="flex flex-col bg-primary rounded-xl p-8 text-gray-100 gap-4">
-
+        <h3 class="text-2xl font-display font-bold text-primary text-center mb-4">
+          Let’s chat about how I can help your business grow!
+        </h3>
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          class="flex flex-col bg-primary rounded-xl p-8 text-gray-100 gap-4"
+        >
           <div class="flex flex-col">
-            <label for="name">name</label>
-            <input type="text" name="name" class="p-2 rounded-xl text-gray-900">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="p-2 rounded-xl text-gray-900" />
           </div>
 
           <div class="flex flex-col">
             <label for="email">Email</label>
-            <input type="email" name="email" class="p-2 rounded-xl text-gray-900">
+            <input type="email" name="email" class="p-2 rounded-xl text-gray-900" />
           </div>
 
           <div class="flex flex-col">
             <label for="message">Message</label>
-            <textarea rows="4" type="text" name="message" class="p-2 rounded-xl text-gray-900" />
+            <textarea rows="4" name="message" class="p-2 rounded-xl text-gray-900"></textarea>
           </div>
 
           <button class="rounded-xl bg-accent text-primary py-2">Submit</button>
         </form>
       </div>
-      <img src={contactImg.src} alt="Artistic Portrait of Me">
+      <img src={contactImg.src} alt="Artistic Portrait of Me" />
+    </div>
+
+    <div class="py-12 px-4 lg:px-32">
+      <p class="text-primary text-center">Ready to take your social media to the next level?</p>
+      <h2 class="font-display font-black text-6xl text-accent text-center">Let's Connect!</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-8 gap-4">
+        <div class="flex-flex-col bg-primary rounded-xl p-4 text-gray-100">
+          <Icon name="tabler:phone" class="text-accent h-6 w-6" />
+          <h4 class="font-display font-black text-xl">Phone</h4>
+          <a href="tel:09758023675" class="underline">09758023675</a>
+        </div>
+        <div class="flex-flex-col bg-primary rounded-xl p-4 text-gray-100">
+          <Icon name="tabler:mail" class="text-accent h-6 w-6" />
+          <h4 class="font-display font-black text-xl">Email</h4>
+          <a href="mailto:hello@dryxcy.com" class="underline">hello@dryxcy.com</a>
+        </div>
+        <div class="flex-flex-col bg-primary rounded-xl p-4 text-gray-100">
+          <Icon name="tabler:brand-facebook" class="text-accent h-6 w-6" />
+          <h4 class="font-display font-black text-xl">Facebook</h4>
+          <a href="https://www.facebook.com/profile.php?id=100064760677996" class="underline">Dryxcy</a>
+        </div>
+        <div class="flex-flex-col bg-primary rounded-xl p-4 text-gray-100">
+          <Icon name="tabler:brand-instagram" class="text-accent h-6 w-6" />
+          <h4 class="font-display font-black text-xl">Instagram</h4>
+          <a href="https://instagram.com/grrrrrgeous_dryxcy" class="underline">grrrrrgeous_dxryxcy</a>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
