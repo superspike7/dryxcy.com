@@ -8,6 +8,9 @@ import service1 from '~/assets/images/service-1.png';
 import service2 from '~/assets/images/service-2.png';
 import service3 from '~/assets/images/service-3.png';
 import service4 from '~/assets/images/service-4.png';
+import contentCreation1 from '~/assets/images/content-creation-1.png';
+import contentCreation2 from '~/assets/images/content-creation-2.png';
+import contentCreation3 from '~/assets/images/content-creation-3.png';
 
 const metadata = {
   title: 'Dryxcy — Social Media Manager Virtual Assistant for Interior Design Business',
@@ -77,6 +80,7 @@ const metadata = {
       </div>
     </div>
   </section>
+
   <section id="services">
     <h2 class="text-center font-black font-display text-6xl mb-4 text-primary">Services</h2>
     <div class="flex flex-col md:flex-row justify-center p-4 md:px-36 gap-12">
@@ -111,6 +115,28 @@ const metadata = {
           I manage your Facebook page with a focus on increasing engagement and building community, crafting posts that
           capture attention, responding to inquiries, and analyzing performance to optimize growth.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="bg-primary py-20 px-4 md:px-16">
+    <h2 class="text-center font-display font-black text-6xl text-gray-100 my-8">Portfolio</h2>
+    <div class="flex flex-col lg:flex-row gap-4">
+      <div class="flex flex-col gap-2 justify-between">
+        <div>
+          <h3 class="font-black font-display text-accent text-3xl">Content Creation</h3>
+          <p class="text-gray-100 text-xl">
+            Through captivating visuals and engaging content, I successfully sold out my entire collection, expanding my
+            reach from local customers to a nationwide audience.
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4 lg:h-96">
+          <img src={contentCreation2.src} alt="Colorful ribbons with high quality branding" class="lg:flex-3">
+          <img src={contentCreation3.src} alt="Colorful scrunchies with high quality branding" class="lg:flex-1">
+        </div>
+      </div>
+      <div class="lg:order-first lg:w-[40%]">
+        <img src={contentCreation1.src} alt="White ribbons with high quality branding" class="lg:h-full w-full object-cover">
       </div>
     </div>
   </section>
