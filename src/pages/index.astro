@@ -11,6 +11,11 @@ import service4 from '~/assets/images/service-4.png';
 import contentCreation1 from '~/assets/images/content-creation-1.png';
 import contentCreation2 from '~/assets/images/content-creation-2.png';
 import contentCreation3 from '~/assets/images/content-creation-3.png';
+import socialGraphic1 from '~/assets/images/social-graphic-1.png';
+import socialGraphic2 from '~/assets/images/social-graphic-2.png';
+import socialGraphic3 from '~/assets/images/social-graphic-3.png';
+import socialGraphic4 from '~/assets/images/social-graphic-4.png';
+import socialGraphic5 from '~/assets/images/social-graphic-5.png';
 
 const metadata = {
   title: 'Dryxcy — Social Media Manager Virtual Assistant for Interior Design Business',
@@ -120,7 +125,7 @@ const metadata = {
   </section>
 
   <section id="portfolio" class="bg-primary py-20 px-4 md:px-16">
-    <h2 class="text-center font-display font-black text-6xl text-gray-100 my-8">Portfolio</h2>
+    <h2 class="text-center font-display font-black text-6xl text-gray-100 mb-12">Portfolio</h2>
     <div class="flex flex-col lg:flex-row gap-4">
       <div class="flex flex-col gap-2 justify-between">
         <div>
@@ -131,12 +136,38 @@ const metadata = {
           </p>
         </div>
         <div class="flex flex-col lg:flex-row gap-4 lg:h-96">
-          <img src={contentCreation2.src} alt="Colorful ribbons with high quality branding" class="lg:flex-3">
-          <img src={contentCreation3.src} alt="Colorful scrunchies with high quality branding" class="lg:flex-1">
+          <img src={contentCreation2.src} alt="Colorful ribbons with high quality branding" class="lg:flex-3" />
+          <img
+            src={contentCreation3.src}
+            alt="Colorful scrunchies with high quality branding"
+            class="lg:flex-1 object-cover"
+          />
         </div>
       </div>
       <div class="lg:order-first lg:w-[40%]">
-        <img src={contentCreation1.src} alt="White ribbons with high quality branding" class="lg:h-full w-full object-cover">
+        <img
+          src={contentCreation1.src}
+          alt="White ribbons with high quality branding"
+          class="lg:h-full w-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Social Media Graphics -->
+
+    <div class="mt-16">
+      <h3 class="font-black font-display text-accent text-3xl">Social Media Graphics</h3>
+      <p class="text-gray-100 text-xl">
+        My designs elevate online presence, boost engagement, and ensure a cohesive brand message. With a blend of
+        creativity and strategy, I help turn followers into loyal customers through compelling visuals that speak to the
+        audience.
+      </p>
+      <div class="grid grid-cols-2 grid-rows-3 sm:grid-cols-4 sm:grid-rows-2 max-h-[800px] gap-4 mt-8">
+        <img src={socialGraphic1.src} alt="Social Graphics about website" class="row-span-2 sm:col-span-2 sm:row-span-2 w-full h-full object-cover">
+        <img src={socialGraphic2.src} alt="Social Graphics about website" class="w-full h-full object-cover">
+        <img src={socialGraphic3.src} alt="Social Graphics about website" class="w-full h-full object-cover">
+        <img src={socialGraphic4.src} alt="Social Graphics about website" class="w-full h-full object-cover">
+        <img src={socialGraphic5.src} alt="Social Graphics about website" class="w-full h-full object-cover">
       </div>
     </div>
   </section>
