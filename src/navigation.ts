@@ -41,7 +41,11 @@ export const footerData = {
   ],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/grrrrrgeous_dryxcy' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=100064760677996' },
+    {
+      ariaLabel: 'Facebook',
+      icon: 'tabler:brand-facebook',
+      href: 'https://www.facebook.com/profile.php?id=100064760677996',
+    },
   ],
   footNote: `
     Design by Me and Hand-Coded by <a class="text-primary underline dark:text-muted" href="https://lightlaunchstudio.com/">LightLaunchStudio</a> · All rights reserved.
