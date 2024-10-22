@@ -20,6 +20,7 @@ import logoDesign1 from '~/assets/images/logo-design-1.png';
 import logoDesign2 from '~/assets/images/logo-design-2.png';
 import socialEngagement1 from '~/assets/images/engagement-1.png';
 import socialEngagement2 from '~/assets/images/engagement-2.png';
+import contactImg from '~/assets/images/contact.png';
 
 const metadata = {
   title: 'Dryxcy — Social Media Manager Virtual Assistant for Interior Design Business',
@@ -37,7 +38,7 @@ const metadata = {
         <h1 class="text-5xl font-black text-primary font-display">
           Your Go-To Social Media Management Virtual Assistant for Interior Design Businesses
         </h1>
-        <a class="rounded-xl p-4 bg-accent text-primary font-bold inline w-fit" href="#">See My Work</a>
+        <a class="rounded-xl p-4 bg-accent text-primary font-bold inline w-fit" href="#portfolio">See My Work</a>
       </div>
       <div class="z-10 relative top-28 sm:top-10 flex flex-row-reverse">
         <img
@@ -48,6 +49,7 @@ const metadata = {
       </div>
     </div>
   </section>
+
   <section id="about" class="bg-primary relative top-[-120px] z-10">
     <div class="flex flex-col sm:flex-row px-8 md:px-2 md:p-16 py-28 gap-4">
       <div class="flex flex-col text-gray-100 sm:w-[40%] items-center">
@@ -130,7 +132,32 @@ const metadata = {
 
   <section id="portfolio" class="bg-primary py-20 px-4 md:px-36">
     <h2 class="text-center font-display font-black text-6xl text-gray-100 mb-12">Portfolio</h2>
-    <div class="flex flex-col lg:flex-row gap-4">
+
+    <!-- Engagement strategies -->
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="md:col-span-2 lg:col-span-1 lg:pl-16">
+        <h3 class="font-black font-display text-accent text-3xl">Engagement Strategies</h3>
+        <p class="text-gray-100 text-xl mt-4">
+          I have effectively utilized engagement strategies that are reflected in my sample screenshots. One image
+          showcases my handmade scrunchies and hair bows, highlighting their vibrant colors and unique designs, which
+          have garnered positive feedback. The second screenshot features a makeup transformation, capturing the
+          dramatic before-and-after effect that resonates with my audience. By leveraging targeted hashtags, engaging
+          captions, and interactive elements, I’ve successfully increased likes and comments on my posts.
+        </p>
+      </div>
+      <img
+        src={socialEngagement1.src}
+        alt="Screenshot of positive social media engagment"
+        class="justify-self-end"
+      />
+      <img
+        src={socialEngagement2.src}
+        alt="Another screenshot of positive social media engagment"
+      />
+    </div>
+
+    <div class="mt-32 flex flex-col lg:flex-row gap-4">
       <div class="flex flex-col gap-2 justify-between">
         <div>
           <h3 class="font-black font-display text-accent text-3xl">Content Creation</h3>
@@ -220,29 +247,36 @@ const metadata = {
         class="lg:order-first flex-1 h-full w-full object-cover"
       />
     </div>
+  </section>
 
-    <!-- Engagement strategies -->
 
-    <div class="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div class="md:col-span-2 lg:col-span-1 lg:pl-16">
-        <h3 class="font-black font-display text-accent text-3xl">Engagement Strategies</h3>
-        <p class="text-gray-100 text-xl mt-4">
-          I have effectively utilized engagement strategies that are reflected in my sample screenshots. One image
-          showcases my handmade scrunchies and hair bows, highlighting their vibrant colors and unique designs, which
-          have garnered positive feedback. The second screenshot features a makeup transformation, capturing the
-          dramatic before-and-after effect that resonates with my audience. By leveraging targeted hashtags, engaging
-          captions, and interactive elements, I’ve successfully increased likes and comments on my posts.
-        </p>
+  <section id="contact" class="py-16 px-4">
+    <h2 class="font-black text-6xl font-display text-primary text-center">Contact</h2>
+
+    <div class="flex flex-col md:flex-row max-w-2xl mx-auto gap-4 mt-8">
+      <div class="">
+        <h3 class="text-2xl font-display font-bold text-primary text-center mb-4">Let’s chat about how I can help your business grow!</h3>
+        <form action="" class="flex flex-col bg-primary rounded-xl p-8 text-gray-100 gap-4">
+
+          <div class="flex flex-col">
+            <label for="name">name</label>
+            <input type="text" name="name" class="p-2 rounded-xl text-gray-900">
+          </div>
+
+          <div class="flex flex-col">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="p-2 rounded-xl text-gray-900">
+          </div>
+
+          <div class="flex flex-col">
+            <label for="message">Message</label>
+            <textarea rows="4" type="text" name="message" class="p-2 rounded-xl text-gray-900" />
+          </div>
+
+          <button class="rounded-xl bg-accent text-primary py-2">Submit</button>
+        </form>
       </div>
-      <img
-        src={socialEngagement1.src}
-        alt="Screenshot of positive social media engagment"
-        class="justify-self-end"
-      />
-      <img
-        src={socialEngagement2.src}
-        alt="Another screenshot of positive social media engagment"
-      />
+      <img src={contactImg.src} alt="Artistic Portrait of Me">
     </div>
   </section>
 </Layout>
